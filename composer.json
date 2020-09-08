@@ -1,13 +1,20 @@
 {
-  "name": "mystudytime/amazon-advertising",
+  "name": "gzp233/amazon-advertising",
   "description": "Amazon Advertising API v2 Client Library",
   "type": "library",
   "license": "MIT",
+  "repositories": [  
+    {  
+        "type": "vcs",  
+        "url": "https://github.com/gzp233/easy-amazon-advertising"  
+    }  
+  ],  
   "require": {
     "php": ">=7.2.0",
     "guzzlehttp/guzzle": "6.*",
     "pimple/pimple": "~3.0",
     "monolog/monolog": "^1.22 || ^2.0",
+    "mystudytime/easy-amazon-advertising":"~1.2",
     "ext-zlib": "*"
   },
   "keywords": [
@@ -26,8 +33,8 @@
   },
   "authors": [
     {
-      "name": "bai he",
-      "email": "b_aihe@163.com"
+      "name": "gzp",
+      "email": "281550060@qq.com"
     }
   ],
   "minimum-stability": "dev",

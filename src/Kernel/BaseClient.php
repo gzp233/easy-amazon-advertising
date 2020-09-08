@@ -176,7 +176,13 @@ class BaseClient
             'client_secret' => $this->config['clientSecret'],
         ];
 
-        return $this->request(self::$apiTokenUrl, 'POST', ['form_params' => $params, 'headers' => $headers, 'timeout' => 30]);
+        $response = $this->request(self::$apiTokenUrl, 'POST', ['form_params' => $params, 'headers' => $headers, 'timeout' => 30]);
+        if (!$response['success']) {
+            throw new RuntimeException('refresh token failed.');
+        }
+        $this->config['accessToken'] = $response['response']['access_token'];
+
+        return $response;
     }
 
     /**
