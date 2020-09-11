@@ -22,6 +22,11 @@ class Client extends BaseClient
         return $this->httpPost("/sp/{$recordType}/report", $params);
     }
 
+    public function requestAsinReport(string $recordType, array $params)
+    {
+        return $this->httpPost("/asins/report", $params);
+    }
+
     /**
      * getReport.
      *

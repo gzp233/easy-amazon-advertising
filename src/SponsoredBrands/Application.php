@@ -27,6 +27,8 @@ class Application extends Container
         Keywords\ServiceProvider::class,
         ProductTargeting\ServiceProvider::class,
         Bid\ServiceProvider::class,
+        Drafts\ServiceProvider::class,
+        Brands\ServiceProvider::class,
     ];
 
     /**
