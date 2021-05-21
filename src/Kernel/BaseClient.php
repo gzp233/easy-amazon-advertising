@@ -4,6 +4,7 @@ namespace easyAmazonAdv\Kernel;
 
 use easyAmazonAdv\Kernel\Exceptions\InvalidArgumentException;
 use easyAmazonAdv\Kernel\Exceptions\InvalidConfigException;
+use easyAmazonAdv\Kernel\Exceptions\RuntimeException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Client;
